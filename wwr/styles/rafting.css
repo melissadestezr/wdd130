@@ -8,20 +8,34 @@
 }
 
 header {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
     color: var(--accent2-color);
-    border: 2px solid var(--accent1-color);
+    border: 2px solid var(--secondary-color);
     background-color: var(--primary-color);
+    box-sizing: border-box;
 }
 
-nav a {
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 16px;
-    text-decoration: none;
-    font-weight: bold;
-    color: #fff;
-    border-bottom: 2px solid var(--accent1-color);
+    gap: 64px;
+    border: 2px solid #fff;
+    border-radius: 8px;
     background-color: var(--secondary-color);
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
 }
 
 * {
@@ -35,33 +49,14 @@ body{
     color: #fff;
 }
 
-header, footer {
+header, main, footer {
+    max-width: 1200px;
+    padding: 16px;
     margin: 0 auto;
+    gap: 32px;
 }
 
-grid {
-    display: grid;
-    align-items: center;
-}
-
-main {
-    grid-column: 2 / 3;
-    margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-}
-
-h1 {
-    font-family: var(--heading-font);
-    text-decoration:wavy underline;
-}
-
-h2 {
+h1, h2 {
     font-family: var(--heading-font);
 }
 
@@ -71,13 +66,13 @@ p {
     color: #fff;
 }
 
-section, article {
-
-    margin: 16px;
-    padding: 8px;
+ section, article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
     border: 1px solid var(--accent1-color);
     background-color: var(--secondary-color);
-    border-radius: 8px;
     color: #fff;
 }
 
@@ -86,18 +81,22 @@ section, article {
     text-decoration: none;
 }
 .socialmedia img {
-    float: left;
+    float: right;
     width: 50px;
 }
 
 /*Hero Section*/
 .hero {
     position: relative;
+    max-width: 1200px;
+    margin: 32px auto;
+    border: 2px solid var(--secondary-color);
 }
 .hero img {
     display: block;
     width: 100%;
     height: auto;
+    
 }
 h1 {
     position: absolute;
@@ -111,6 +110,9 @@ h1 {
 }
 .hero article {
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
     bottom: 20px;
     width: 95%;
     padding: 16px;
@@ -125,55 +127,42 @@ h1 {
     width: 125px;
 }
 
-/*History Section*/
+/*Hisotry Section*/
 .history {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border: 1px solid var(--accent1-color);
-    background-color: var(--secondary-color);
-    border-radius: 8px;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
 .history h2 {
-    grid-column: 1 / -1;
-    text-align: center;
-    margin-bottom: 16px;
-    color: var(--primary-color);
+    text-align:center;
 }
-.history p:first-of-type {
-    grid-column: 1 / 2;
-    align-self: center;
-}
-.history img {
-    grid-column: 2 / 3;
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    align-self: center;
-}
-.history p:last-of-type {
-    grid-column: 3 / 4;
-    align-self: center;
+
+.history-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*Adventure Section*/
 .adventure {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    border: 1px solid var(--accent1-color);
-    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 16px;
-    background-color: var(--secondary-color);
-    border-radius: 8px;
 }
+
 .adventure h2 {
-    grid-column: 1 / -1;
     text-align: center;
-    margin-bottom: 16px;
-    color: var(--accent1-color);
 }
-.adventure img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 150px;
+    margin: 0 16px;
+    text-align: center;
 }
