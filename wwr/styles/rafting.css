@@ -74,13 +74,25 @@ p {
     color: var(--secondary-color);
 }
 
-/*Socialmedia Section*/
-.socialmedia a {
-    text-decoration: none;
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
-.socialmedia img {
-float: right;
-    width: 50px;
+
+footer p {
+    margin: 0;
+}
+
+/*Socialmedia Section*/
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a img {
+    width: 40px;
 }
 
 /*Hero Section*/
