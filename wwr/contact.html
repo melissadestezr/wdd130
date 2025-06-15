@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Splash Rafting! Contact Us</title>
+        <meta name="description" content="Get in touch with Splash and get ready for adventure! Send us a message, check our location on the map, and meet our staff.">
+        <meta name="author" content="Melissa Destez">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/contact.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/z-splash.png" alt="Rafting Company Logo">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="trips.html">Trips</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="contact">
+                <h1>Contact Us</h1>
+                <p>White Water Rafting</p>
+                <p>Phone: 999-999-999</p>
+                <a href="mailto:splashraftingwater@gmail.com">splashraftingwater@gmail.com</a>
+                <p>Address: João da Barra - RJ</p>
+            </section>
+            <article class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d18156.737888077372!2d-41.07994280573928!3d-21.651357591342414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1749944995934!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </article>
+
+            <form class="form">
+                <h2>Send Us a Message</h2>
+                
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required />
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="user_email" required />
+                
+                <label>Purpose of your message:</label>
+                <div class="radio-group">  
+                    <label><input type="radio" name="purpose" value="general" required /> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation" /> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion" /> Website Suggestion</label>
+                </div>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="user_message" rows="5" required></textarea>
+
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div class="employers">
+                <h2>Meet our staff:</h2>
+                <figure>
+                    <img src="images/Image 14 de jun. de 2025, 21_03_16-3(2).png" alt="Ana Souza picture">
+                    <figcaption>Ana Souza <br> Markething Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/Image 14 de jun. de 2025, 20_56_59-1.png" alt="Ana Souza picture">
+                    <figcaption>Paulo Lima <br> HR Maganager</figcaption>
+                    </figure>
+                <figure>
+                    <img src="images/Image 14 de jun. de 2025, 20_56_59-2.png">
+                    <figcaption>Carla Menezes <br> Graphic Designer</figcaption>
+                </figure>
+            </div>
+        </main>
+        <footer>
+            <p>&#169;2025 Splash &#8902; Melissa Destez &#8902;</p>
+            <nav class="socialmedia">
+                <a href="https://facebook.com"><img src="images/2018_social_media_popular_app_logo_facebook-512.webp" alt="Logo Facebook Image"></a>
+                <a href="https://twitter.com"><img src="images/2018_social_media_popular_app_logo_twitter-512.webp" alt="Logo Twitter Image"></a>
+                <a href="https://instagram.com"><img src="images/2018_social_media_popular_app_logo_instagram-512.webp" alt="Logo Instagram Image"></a>
+            </nav>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,159 @@
+:root {
+    --primary-color: #669BBC; /*light blue*/
+    --secondary-color: #29335C; /*dark blue*/
+    --accent1-color: #F3A712; /*yellow*/
+    --accent2-color:  #E54E30; /*orange*/
+    --heading-font: "Luckiest Guy", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+
+/*Header Section*/
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-items: center;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--accent2-color);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--primary-color);
+    box-sizing: border-box;
+}
+
+/*Header Buttons*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    gap: 64px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--body-font);
+    font-size: 1.2rem;
+}
+
+/*Main Section*/
+main {
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    padding: 16px;
+    margin: 0 auto;
+    gap: 32px;
+}
+ section, article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+}
+
+/*Contact Section*/
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+}
+
+/* Map Section */
+.map {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+}
+
+/* Meet our Staff Section */
+.employers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f9f9f9;
+}
+.employers h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.employers figure {
+    text-align: center;
+}
+.employers img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid var(--secondary-color);
+}
+
+/* Form Styling */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 2px dashed #aaa;
+    background-color: #f5f5f5;
+}
+.form button {
+    padding: 10px;
+    background-color: var(--accent1-color);
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/*Footer Section*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 32px auto;
+    border: 2px var(--secondary-color);
+    max-width: 1200px;
+}
+
+footer p {
+    margin: 0;
+}
+.socialmedia {
+    display: flex;
+    gap: 10px;
+}
+
+.socialmedia a img {
+    width: 40px;
+}
