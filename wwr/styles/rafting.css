@@ -105,10 +105,9 @@ footer p {
     border: 2px solid var(--secondary-color);
 }
 .hero img {
-    display: center;
+    display:  block;
     width: 100%;
     height: auto;
-    
 }
 h1 {
     position: absolute;
